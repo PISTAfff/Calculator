@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="Container">
+        <div class="resultContainer">
+            Result
+        </div>
+        <input type="text" class="InputArea" id="InputField" value="0" readonly>
+        <div class="rowContainer">
+            <div class="rows">
+                <button class="Numbers" id="Num7" onclick="DisplayNumber(7)">
+                    7
+                </button>
+                <button class="Numbers" id="Num8" onclick="DisplayNumber(8)">
+                    8
+                </button>
+                <button class="Numbers" id="Num9" onclick="DisplayNumber(9)">
+                    9
+                </button>
+                <button class="Numbers" id="Num+" onclick="DisplayNumber('+')">
+                    +
+                </button>
+
+            </div>
+            <div class="rows">
+                <button class="Numbers" id="Num4" onclick="DisplayNumber(4)">
+                    4
+                </button>
+                <button class="Numbers" id="Num5" onclick="DisplayNumber(5)">
+                    5
+                </button>
+                <button class="Numbers" id="Num6" onclick="DisplayNumber(6)">
+                    6
+                </button>
+                <button class="Numbers" id="Num-" onclick="DisplayNumber('-')">
+                    -
+                </button>
+            </div>
+            <div class="rows">
+                <button class="Numbers" id="Num1" onclick="DisplayNumber(1)">
+                    1
+                </button>
+                <button class="Numbers" id="Num2" onclick="DisplayNumber(2)">
+                    2
+                </button>
+                <button class="Numbers" id="Num3" onclick="DisplayNumber(3)">
+                    3
+                </button>
+                <button class="Numbers" id="Num*" onclick="DisplayNumber('*')">
+                    *
+                </button>
+
+            </div>
+            <div class="rows">
+                <button class="Numbers" id="Num0" onclick="DisplayNumber(0)">
+                    0
+                </button>
+                <button class="Numbers" id="Num." onclick="DisplayNumber('.')">
+                    .
+                </button>
+                <button class="Numbers" id="NumC" onclick="Clear()">
+                    C
+                </button>
+                <button class="Numbers" id="Num=" onclick="Result()">
+                    =
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
